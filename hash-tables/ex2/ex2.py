@@ -12,6 +12,7 @@ def reconstruct_trip(tickets):
             # Each time, we find in the dictionary the key from our trip list.
             trip.append(ht[trip[i]])
         except:
+            # If there is a missing layover, it will return an empty array.
             trip = []
             return trip
     return trip
